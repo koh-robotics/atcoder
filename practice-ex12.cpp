@@ -17,5 +17,5 @@ int main() {
     }
   }
   a = 1 + b - c;
-  cout << a << endl;
+  cout << a << endl; 
 }
