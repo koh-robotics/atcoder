@@ -9,6 +9,7 @@ int main() {
   for (int i = 0; i < str.size(); i++) {
     if (str.at(i) == 'O') {
       count++;
+      cout << count << endl;
     }
   }
  
