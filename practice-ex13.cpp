@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int N,a,b,ave;
+  int N = 0,a = 0,b = 0,ave = 0;
   cin >> N;
   vector<int> vec(N);
   //make average
@@ -12,12 +12,11 @@ int main() {
   for (int i = 0; i < N; i++) {
     a+= vec.at(i); 
   }
-  ave = a/N;
-  cout << ave << endl;
+  ave = a / N;
 
   for (int i = 0; i < N; i++) {
     b = ave - vec.at(i);
-    if (b >= 0) {
+    if (b <= 0) {
       b = b * -1;
     }
     cout << b << endl;
