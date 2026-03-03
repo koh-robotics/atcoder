@@ -2,16 +2,9 @@
 using namespace std;
  
 int main() {
-  string str;
-  cin >> str;
- 
-  int count = 0;
-  for (int i = 0; i < str.size(); i++) {
-    if (str.at(i) == 'O') {
-      count++;
-      cout << count << endl;
+    vector<int>count(5);
+    count.at(3) = 0;
+    count.at(2) = 0;
+    cout << min(count.at(3), count.at(2));
+
     }
-  }
- 
-  cout << count << endl;
-}
