@@ -17,7 +17,7 @@ int main() {
             count.at(c) = +1;
         }
         else{
-            c++;
+            c++; 
         }
 
     }
