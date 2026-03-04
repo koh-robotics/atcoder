@@ -5,6 +5,11 @@ using namespace std;
 // 引数 scores: scores.at(i)にi番目のテストの点数が入っている
 // 返り値: 1人のテストの合計点
 int sum(vector<int> scores) {
+  int a = 0;
+  for (int i = 0;i < scores.size(); i++ ){
+    a += scores.at(i); 
+  }
+  return a;
   // ここにプログラムを追記
 }
 
