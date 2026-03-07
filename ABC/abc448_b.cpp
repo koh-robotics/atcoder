@@ -2,7 +2,7 @@
 using namespace std;
  
 int main() {
-    int N,M,d = 0,p = 0;
+    int N,M,d = 0,p = 0,t = 0;
     cin >> N >> M;
     vector<int> c(M);
     for (int i = 0; i < M; i++){
@@ -16,17 +16,15 @@ int main() {
 
     }
     for (int i = 0; i < N; i++){
-        int ca = c.at(a.at(i)-1);
-        if (ca - b.at(i) < 0){
-          p+=ca;
-          c.at(a.at(i)-1) = 0;
+        p = a.at(i)-1;
+        if (c.at(p) - b.at(i) < 0){
+          t += c.at(p);
+          c.at(p) = 0;
         }
         else{
-          p+=b.at(i);
-          c.at(a.at(i-1)) = c.at(a.at(i)-1) - b.at(i);
+          c.at(p) = c.at(p) - b.at(i);
+          t += b.at(i);
         }
-        
     }
-    cout << p << endl;
+    cout << t << endl;
 }
-
