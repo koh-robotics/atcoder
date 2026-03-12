@@ -16,4 +16,4 @@ This is a C++ learning repository by Koh (koh-robotics), a first-year student at
 
 ## 💪 A Note
 I'm steadily building my skills with the goal of attending MIT (Massachusetts Institute of Technology)!
-Translated with DeepL.com (free version)
+
