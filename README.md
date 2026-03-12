@@ -4,7 +4,7 @@ This is a C++ learning repository by Koh (koh-robotics), a first-year student at
 
 - Master the fundamentals of C++
 - Acquire algorithmic basics and challenge myself in competitive programming
-- Participate in the Olympic in Informatics
+- Participate in the Olympiad in Informatics
 
 ## 📚 Current Learning Materials
 - [AtCoder Programming Guide for Beginners (APG4b)](https://atcoder.jp/contests/APG4b)
