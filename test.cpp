@@ -2,31 +2,21 @@
 using namespace std;
  
 int main() {
-    int N,M,d = 0,p = 0;
-    cin >> N >> M;
-    vector<int> c(M);
-    for (int i = 0; i < M; i++){
-        cin >> c.at(i);
+    string s;
+    int l,r,n,count = 0,d;
+    vector <int> a(26);
+    cin >> n >> l >> r;
+    cin >> s;
+    vector<vector<int>> b(n, vector<int>(26,0));
+    for (int i = 0; i < n; i++){
+        a.at(s.at(i));
+        b.at(i).at(s.at(i)) = 1;
+        }
+    for (int i = 0; i< 26; i++){
+        a.at(i)
     }
     
-    vector<int> a(N);
-    vector<int> b(N);
-    for (int i = 0; i < N; i++){
-        cin >> a.at(i) >> b.at(i);
-
-    }
-    for (int i = 0; i < N; i++){
-        int ca = c.at(a.at(i)-1);
-        if (ca - b.at(i) < 0){
-          p+=ca;
-          c.at(a.at(i)-1) = 0;
-        }
-        else{
-          p+=b.at(i);
-          c.at(a.at(i-1)) = c.at(a.at(i)-1) - b.at(i);
-        }
-        
-    }
-    cout << p << endl;
+    
+    
+    cout << count << endl;
 }
-
