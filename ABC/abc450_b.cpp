@@ -21,7 +21,7 @@ int main() {
 
                 if (m.at(a).at(c) < m.at(a).at(b) + m.at(b).at(c)){
                     d++;
-                }
+                } 
 
 
             }
