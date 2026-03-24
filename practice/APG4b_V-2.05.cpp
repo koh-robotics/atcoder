@@ -4,15 +4,16 @@ using namespace std;
 // x番の組織について、子組織からの報告書が揃った時刻を返す
 // childrenは組織の関係を表す2次元配列(参照渡し)
 int complete_time(vector<vector<int>> &children, int x) {
-    if (children.at(x).size() == 0){
+    if (children.at(x).size() == 0) {
         return 0;
     }
-    int max_time = 0;
-    for (int c : children.at(x)) {
-        int time = complete_time(children, c) + 1;
-        max_time = max(max_time, time);
+    int a = 0;
+    for (int c :children.at(x)){
+        int s = complete_time(children,c);
+        a = max(a,s);
     }
-    return max_time;
+    return a+1;
+
   // (ここに追記して再帰関数を実装する)
 }
 
