@@ -5,7 +5,7 @@ int main() {
     int N,count = 0,under = 0;
     cin >> N;
     vector<vector<int>> a(N, vector<int>(2));
-    for (int i = 0;i < N; i++){
+    for (int i = 0;i < N; i++){ 
         cin >> a.at(N-1-i).at(0) >> a.at(N-1-i).at(1);
     }
     for (int i = 0; i < N; i++){
