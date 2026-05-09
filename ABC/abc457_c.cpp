@@ -19,13 +19,14 @@ int main() {
     }
     for (int i = 0; i < n; i++){
         cin >> change;
-        if (change * lcount.at(i) >= k){
-            b = (k-1) % lcount.at(i);
-            cout << a.at(i).at(b);
-            break; 
+        keep = change * lcount.at(i)+keep;
+        if (keep >= k){
+            
+            keep = keep - secondk;
+            keep = keep / lcount.at(i) -1;
+            cout << a.at(i).at(keep);
+            break;
         }
-        else{
-        k = k-change * lcount.at(i);
-        }
+        secondk = keep;
     }
 }
