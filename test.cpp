@@ -1,31 +1,31 @@
 #include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
 using namespace std;
  
 int main() {
-    long long n,k,l,keep=0,change,b=0,secondk=0;
-    cin >> n >> k;
-    secondk = k;
-    vector<vector<int>> a(n);
-    vector<int> lcount(n);
-    for (int i = 0; i<n; i++){
+    unsigned long long x = 6000000000000000000ULL;
+    for (unsigned long long i = 0; i < x; i++){
+        unsigned long long a = i+1;
+        while(a != 1){
+            if(a % 2 == 0){
+                a = a/2;
+            }
+                else{
+                a = 3 * a +1;
+            }
+            
 
-        cin >> l;
-        lcount.at(i) = l;
-        a.at(i).resize(l);
-        for (int j = 0; j<l; j++ ){
-            cin >> a.at(i).at(j);
         }
-
-    }
-    for (int i = 0; i < n; i++){
-        cin >> change;
-        if (change * lcount.at(i) >= k){
-            b = (k-1) % lcount.at(i);
-            cout << a.at(i).at(b);
-            break; 
+        if (a != 1){
+            cout << i+1 << endl;
+            cout << ("yesyesyesyesyes");
+            break;
         }
         else{
-        k = k-change * lcount.at(i);
+            if((i + 1)% 1000000 == 0){
+                cout << i+1 << endl;
+            }
         }
     }
 }
