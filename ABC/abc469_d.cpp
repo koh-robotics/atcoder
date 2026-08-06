@@ -27,7 +27,7 @@ int main() {
     }
         while (true){
         int i = ic;
-        if(x.at(i).at(0) != a && x.at(i).at(0) != b && x.at(i).at(0) != c){
+        if(x.at(li).at(0) != a && x.at(i).at(0) != b && x.at(i).at(0) != c){
             c = x.at(i).at(0);
             ic = i;
             break;
